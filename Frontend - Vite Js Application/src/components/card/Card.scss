@@ -1,0 +1,57 @@
+@import "../../style.scss";
+
+
+.card {
+    @include themify($themes){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    align-content: center;
+    margin: auto;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 2;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid themed("border");
+        height: 22em;
+        width: 50%;
+        margin: 20px;
+        border-radius: 10px;
+        transition-duration: 0.3s;
+        box-shadow: 0 0 rgba(255, 255, 255, 0.1);
+
+        img {
+            width: 90px;
+            height: 90px;
+            margin-top: 1em;
+        }
+
+        h3 {
+            font-weight: bold;
+            padding: 10px;
+           color: themed("textColor");
+        }
+
+        p {
+
+            line-height: 20px;
+            text-align: center;
+            margin-top: 10px;
+            color: themed("textColorsoft");
+            font-weight: bold;
+            font-size: 1em;
+            margin-bottom: 10px;
+            
+        }
+    }
+
+    .container:hover {
+        box-shadow: 0 0 15px rgba(68, 143, 246, 1);
+        transform: scale(1.1);
+    }
+}
+}

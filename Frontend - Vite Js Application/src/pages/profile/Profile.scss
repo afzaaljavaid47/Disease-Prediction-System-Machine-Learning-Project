@@ -1,0 +1,116 @@
+@import "../../style.scss";
+
+.proffile {
+  @include themify($themes) {
+    height:100vh;
+    background-color: themed("bgSoft");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .card {
+      display: flex;
+      flex-direction: row-reverse;
+      background-color:themed("bg");
+      width: 60%;
+      border-radius: 10px;
+      min-height:400px;
+      overflow: hidden;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  
+      .left {
+        flex: 1;
+        background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
+          url("../../assets/doctor3.jpeg") center;
+        background-size: cover;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        color: white;
+        justify-content: center;
+        span {
+          font-size: 14px;
+        }
+        button {
+          width: 50%;
+          padding: 10px;
+          border: none;
+          background-color: white;
+          color: rebeccapurple;
+          font-weight: bold;
+          cursor: pointer;
+        }
+        button:hover {
+          background-color: rgb(212, 209, 209);
+        }
+      }
+      .right {
+        flex: 1;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        h1 {
+          color: themed("textColor");
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          .profilePic{
+            
+            label{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              img{
+                width: 90px;
+                height: 90px;
+                border: 4px lightgray;   
+                box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+                border-radius: 9999px;
+                cursor: pointer;
+              }
+              img:hover{
+                border:3px solid lightgray;
+              }
+            }
+            input[type='file']{
+            display: none;
+            }
+          }
+          input {
+            border: none;
+            border-bottom: 1px solid themed("border");
+             padding: 10px 20px;
+             background-color: transparent;
+          }
+          .check {
+            display: flex;
+            p {
+              padding-left: 5px;
+              padding-right: 80px;
+              color: #555;
+            }
+          }
+          button {
+            width: 50%;
+            padding: 10px;
+            border: none;
+            background-color: #938eef;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 10px;
+          }
+          button:hover {
+            background-color: #7670f3;
+          }
+        }
+      }
+    }
+  }
+}
+  

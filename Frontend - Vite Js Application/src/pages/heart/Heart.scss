@@ -1,0 +1,108 @@
+@import "../../style.scss";
+
+.prediction {
+    @include themify($themes) {
+        // margin-top: 50px;
+        background-color: themed("bgSoft");
+
+        h1 {
+            text-align: center;
+            color: themed("textColor");
+        }
+
+        h5 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: themed("textColorsoft");
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            margin-left: 50px;
+            margin-right: 50px;
+
+            form {
+
+                margin-top: 3%;
+                margin-left: 17%;
+                margin-right: 20px;
+
+
+                fieldset {
+                    padding: 30px;
+                    border-width: 20px;
+                    border-style: groove;
+                    border-color: #5a5a5a;
+                    background-color: themed("bgSoft");
+                    border-radius: 10px;
+                    margin-bottom: 30px;
+
+
+                    button {
+                        width: 12.5em;
+                        display: block;
+                        margin: auto;
+                        height: 3.5em;
+                        margin-top: 2.5em;
+                        border-radius: 2em;
+                        background-color: #458ff6;
+                        border: none;
+                        color: #fff;
+                        font-weight: bold;
+                        cursor: pointer;
+                        transition-duration: 0.3s;
+                        box-shadow: 0 0 rgba(255, 255, 255, 0.1);
+                    }
+
+                    button:hover {
+                        box-shadow: 0 0 15px rgba(68, 143, 246, 1);
+                        transform: scale(1.1);
+                    }
+                }
+
+                .Form-group {
+                    margin-right: 10px;
+                    display: inline;
+                    align-items: center;
+
+
+                    label {
+                        margin-left: 50px;
+                        margin-right: 40px;
+                        padding: 23px;
+                        font-size: 15px;
+                        display: inline-block;
+                        width: 240px;
+                        color: themed("textColorsoft");
+                    }
+
+                    input {
+                        padding: 8px;
+                        color: themed("textColorsoft");
+                        background-color: transparent;
+                    }
+                }
+            }
+            .display{
+                text-align: center;
+                margin-left: 50px;
+                color: themed("textColor");
+                // margin-top: 40px;
+            }
+            .s{
+                margin-top: 50px;
+                text-align: center;
+                margin-left: 70px;
+                font-size: 35px;
+            }
+            .predic{
+              color: themed("textColor");  
+            }
+        }
+
+    }
+}

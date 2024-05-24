@@ -1,0 +1,19 @@
+.diabetes-prediction{
+    h1{}
+    h5{}
+    .container{
+        form{
+            fieldset{
+                .Form-group{
+                    label{}
+                    input{}
+                    .error{
+                       color: red;
+                       text-align: center;
+                       margin-left: 300px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@import "../../style.scss";
+ 
+
+.desc{
+    @include themify($themes){
+    margin-top: 210px;
+    .desc_container{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 150px;
+        .left{
+            flex: 1;
+           
+            img{
+                width: 27em;
+                margin-right: 30px;
+                // height: 400px;
+            }
+        }
+        .right{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            h1{
+                font-weight: bold;
+                font-size: 2em;
+                color: themed("textColor");
+            }
+         
+            p{
+                width: 100%;
+                color: themed("textColorsoft");
+                margin-top: 1.5rem;
+                font-weight: bold;
+                font-size: 1.3em;
+
+            }
+        }
+    }
+}
+}
